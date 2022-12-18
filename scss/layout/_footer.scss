@@ -1,0 +1,157 @@
+.footer {
+  &__form {
+    display: grid;
+    justify-content: space-between;
+    column-gap: 24px;
+    grid-template-columns: auto 1fr 1fr auto;
+    padding: 54px 80px;
+    background-color: pink;
+    text-align: right;
+
+    &__input {
+      color: rgba(0, 0, 0, 0.5);
+      text-align: right;
+      cursor: pointer;
+    }
+
+    &__label {
+      margin-left: 25px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      color: #004990;
+      margin-bottom: -5px;
+    }
+
+    &__title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #004990;
+    }
+  }
+
+  &__donation {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    column-gap: 70px;
+    padding: 54px 80px;
+    background: rgba(36, 60, 204, 0.05);
+    text-align: right;
+
+    &__column {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      row-gap: 16px;
+      color: #000;
+
+      &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 23px;
+        letter-spacing: -0.02em;
+      }
+
+      &__bar {
+        width: 22px;
+        height: 1px;
+        background-color: #004990;
+        border-radius: 20px;
+      }
+
+      &__text {
+        font-size: 18px;
+        line-height: 24px;
+
+        &_size_small {
+          font-size: 16px;
+          max-width: 250px;
+        }
+      }
+
+      &__phone-number {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 42px;
+        color: #004990;
+      }
+
+      &__social-networks {
+        display: flex;
+        flex-direction: row-reverse;
+        column-gap: 12px;
+      }
+
+      &__button {
+        margin-top: -3px;
+        padding: 12px 72px;
+      }
+
+      &__medals {
+        display: flex;
+        column-gap: 8px;
+      }
+    }
+  }
+
+  &__gratitude {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px 32px;
+    background-color: #edeef8;
+    color: #000;
+
+    &__left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 10px;
+      margin-left: 40px;
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 23px;
+      letter-spacing: -0.02em;
+    }
+
+    &__icon-container {
+      display: flex;
+      column-gap: 0px;
+    }
+
+    &__icon-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__icon-text {
+      font-size: 14px;
+    }
+
+    &__right {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      text-align: right;
+    }
+
+    &__text-1 {
+      max-width: 683px;
+      margin-top: 20px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    &__text-2 {
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+    }
+  }
+}

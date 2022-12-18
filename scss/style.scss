@@ -1,0 +1,22 @@
+// sass scss/style.scss css/style.css
+// sass --watch scss/style.scss:css/style.css
+
+@use "./base/fonts";
+@use "./base/typography";
+@use "./components/buttons";
+
+@use "./layout/header";
+@use "./layout/main";
+@use "./layout/footer";
+
+.body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+  font-family: "Assistant";
+  font-size: 20px;
+  color: #fff;
+  box-sizing: border-box;
+}
