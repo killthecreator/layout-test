@@ -1,27 +1,27 @@
 @font-face {
   font-family: "Assistant";
   font-weight: 300;
-  src: url("../../assets/fonts/Assistant-Light.ttf");
+  src: url("../assets/fonts/Assistant-Light.ttf");
 }
 @font-face {
   font-family: "Assistant";
   font-weight: 400;
-  src: url("../../assets/fonts/Assistant-Regular.ttf");
+  src: url("../assets/fonts/Assistant-Regular.ttf");
 }
 @font-face {
   font-family: "Assistant";
   font-weight: 500;
-  src: url("../../assets/fonts/Assistant-Medium.ttf");
+  src: url("../assets/fonts/Assistant-Medium.ttf");
 }
 @font-face {
   font-family: "Assistant";
   font-weight: 600;
-  src: url("../../assets/fonts/Assistant-SemiBold.ttf");
+  src: url("../assets/fonts/Assistant-SemiBold.ttf");
 }
 @font-face {
   font-family: "Assistant";
   font-weight: 700;
-  src: url("../../assets/fonts/Assistant-Bold.ttf");
+  src: url("../assets/fonts/Assistant-Bold.ttf");
 }
 h1,
 h2,
@@ -376,7 +376,7 @@ input {
   left: 7.3%;
   width: 258px;
   aspect-ratio: 1/1;
-  background: url("../../assets/icons/section-4_circle-2.svg");
+  background: url("../assets/icons/section-4_circle-2.svg");
   font-weight: 300;
   color: #fff;
   text-align: center;
@@ -409,7 +409,7 @@ input {
   left: 25.5%;
   width: 262px;
   aspect-ratio: 1/1;
-  background: url("../../assets/icons/section-4_circle-5.svg");
+  background: url("../assets/icons/section-4_circle-5.svg");
   font-weight: 300;
   color: #fff;
   text-align: center;
@@ -437,7 +437,7 @@ input {
   left: 43.5%;
   width: 222px;
   aspect-ratio: 1/1;
-  background: url("../../assets/icons/section-4_circle-6.svg");
+  background: url("../assets/icons/section-4_circle-6.svg");
   font-weight: 300;
   color: #fff;
   text-align: center;
@@ -466,7 +466,7 @@ input {
   right: 20.7%;
   width: 239px;
   aspect-ratio: 1/1;
-  background: url("../../assets/icons/section-4_circle-8.svg");
+  background: url("../assets/icons/section-4_circle-8.svg");
   font-weight: 300;
   color: #144a92;
   text-align: center;
@@ -503,7 +503,7 @@ input {
   right: -4.7%;
   width: 268px;
   aspect-ratio: 1/1;
-  background: url("../../assets/icons/section-4_circle-5.svg") no-repeat;
+  background: url("../assets/icons/section-4_circle-5.svg") no-repeat;
   font-weight: 300;
   color: #144a92;
   text-align: center;
