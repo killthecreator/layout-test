@@ -11,7 +11,7 @@
     <header class="header">
       <nav class="nav header__left">
         <ul class="nav__list">
-          <li class="nav__item">
+          <li class="nav__item nav__button">
             <button class="button">לתרומה</button>
           </li>
           <li class="nav__item">
@@ -21,7 +21,6 @@
               class="nav__item__drop-arrow"
             />
             HE
-            <span class="HE__arrow"></span>
           </li>
           <span class="nav__divider"></span>
           <li class="nav__item search-n-notif">
@@ -44,7 +43,12 @@
           </li>
           <span class="nav__divider nav__divider-2"></span>
           <li class="nav__item contacts">
-            <p class="contacts__number">1800-599-995</p>
+            <a
+              href="tel:1800599995"
+              class="contacts__number"
+              style="color: #fff"
+              ><p class="contacts__number">1800-599-995</p></a
+            >
             <p class="contacts__text">צרו קשר</p>
           </li>
         </ul>
@@ -60,7 +64,7 @@
             <span class="header__right__button__burger__bar"></span>
           </div>
         </button>
-        <img src="./assets/icons/logo.svg" alt="logo" />
+        <img src="./assets/icons/logo.svg" alt="logo" class="header__logo" />
       </div>
     </header>
     <main class="main">
@@ -108,6 +112,11 @@
               alt="section-2_icon"
               class="section-2__icon"
             />
+            <img
+              src="./assets/icons/section-2_icon-2-2.svg"
+              alt="section-2_icon"
+              class="section-2__icon-2-2"
+            />
             <p class="section-2__text">אבחון מוקדם</p>
           </div>
           <div class="section-2__card">
@@ -115,6 +124,11 @@
               src="./assets/icons/section-2_icon-3.svg"
               alt="section-2_icon"
               class="section-2__icon"
+            />
+            <img
+              src="./assets/icons/section-2_icon-3-2.svg"
+              alt="section-2_icon"
+              class="section-2__icon-3-2"
             />
             <p class="section-2__text">מניעה וגורמי סיכון</p>
           </div>
@@ -411,7 +425,7 @@
         </div>
       </form>
       <div class="footer__donation">
-        <div class="footer__donation__column">
+        <div class="footer__donation__column footer__donation__column-1">
           <p class="footer__donation__column__title">מחלות סרטן</p>
           <span class="footer__donation__column__bar"></span>
           <p class="footer__donation__column__text">סרטן השד</p>
@@ -420,7 +434,7 @@
           <p class="footer__donation__column__text">ילדים ומתבגרים חולי סרטן</p>
           <p class="footer__donation__column__text">גידולי מוח</p>
         </div>
-        <div class="footer__donation__column">
+        <div class="footer__donation__column footer__donation__column-2">
           <p class="footer__donation__column__title">מידע לחולים</p>
           <span class="footer__donation__column__bar"></span>
           <p class="footer__donation__column__text">מוקדי מידע ותמיכה</p>
@@ -429,7 +443,7 @@
           <p class="footer__donation__column__text">מחקרים קלינים בישראל</p>
           <p class="footer__donation__column__text">התמודדות ושיקום</p>
         </div>
-        <div class="footer__donation__column">
+        <div class="footer__donation__column footer__donation__column-3">
           <p class="footer__donation__column__title">גורמי סיכון</p>
           <span class="footer__donation__column__bar"></span>
           <p class="footer__donation__column__text">המאבק בעישון</p>
@@ -438,22 +452,36 @@
           <p class="footer__donation__column__text">פעילות גופנית</p>
           <p class="footer__donation__column__text">כללים לחיים בריאים</p>
         </div>
-        <div class="footer__donation__column">
+        <div class="footer__donation__column footer__donation__column-4">
           <p class="footer__donation__column__title">יצירת קשר</p>
           <span class="footer__donation__column__bar"></span>
           <p class="footer__donation__column__text">לפניה מקוונת</p>
-          <p class="footer__donation__column__phone-number">1-800-599-995</p>
+          <p>
+            <a
+              href="tel:1800599995"
+              class="footer__donation__column__phone-number"
+              >1-800-599-995</a
+            >
+          </p>
 
           <p class="footer__donation__column__title">עקבו אחרינו</p>
           <span class="footer__donation__column__bar"></span>
           <div class="footer__donation__column__social-networks">
-            <img src="./assets/icons/yt-logo.svg" alt="yt-logo" />
-            <img src="./assets/icons/twitter-logo.svg" alt="twitter-logo" />
-            <img src="./assets/icons/insta-logo.svg" alt="insta-logo" />
-            <img src="./assets/icons/fb-logo.svg" alt="fb-logo" />
+            <a href="https://www.youtube.com/"
+              ><img src="./assets/icons/yt-logo.svg" alt="yt-logo"
+            /></a>
+            <a href="https://twitter.com/"
+              ><img src="./assets/icons/twitter-logo.svg" alt="twitter-logo"
+            /></a>
+            <a href="https://instagram.com/"
+              ><img src="./assets/icons/insta-logo.svg" alt="insta-logo"
+            /></a>
+            <a href="https://facebook.com/"
+              ><img src="./assets/icons/fb-logo.svg" alt="fb-logo"
+            /></a>
           </div>
         </div>
-        <div class="footer__donation__column">
+        <div class="footer__donation__column footer__donation__column-5">
           <p class="footer__donation__column__title">התרומה שלכם חשובה להם</p>
           <p class="footer__donation__column__text_size_small">
             בעזרת תרומתכם, נוכל להמשיך לחקור, לתקדם, להילחם ולרפא
@@ -475,6 +503,7 @@
               <img
                 src="./assets/icons/footer-grat-icon-1.svg"
                 alt="grat-icon"
+                class="footer__gratitude__icon-image"
               />
               <p class="footer__gratitude__icon-text">מידע מקצועי</p>
             </div>
@@ -482,6 +511,7 @@
               <img
                 src="./assets/icons/footer-grat-icon-2.svg"
                 alt="grat-icon"
+                class="footer__gratitude__icon-image"
               />
               <p class="footer__gratitude__icon-text">שיקום</p>
             </div>
@@ -489,6 +519,7 @@
               <img
                 src="./assets/icons/footer-grat-icon-3.svg"
                 alt="grat-icon"
+                class="footer__gratitude__icon-image"
               />
               <p class="footer__gratitude__icon-text">מניעה ואבחון</p>
             </div>
@@ -496,6 +527,7 @@
               <img
                 src="./assets/icons/footer-grat-icon-4.svg"
                 alt="grat-icon"
+                class="footer__gratitude__icon-image"
               />
               <p class="footer__gratitude__icon-text">מחקר</p>
             </div>
@@ -514,7 +546,11 @@
           </p>
           <p class="footer__gratitude__text-2">
             Powered By
-            <img src="./assets/icons/purple-logo.svg" alt="purple-logo" />
+            <img
+              src="./assets/icons/purple-logo.svg"
+              alt="purple-logo"
+              style="margin-bottom: -4px"
+            />
             &nbsp; | &nbsp; &nbsp;כל הזכויות שמורות לאגודה למלחמה בסרטן בישראל
             2022 ©
           </p>

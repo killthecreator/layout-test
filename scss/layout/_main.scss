@@ -11,6 +11,14 @@
   align-items: center;
   padding: 0 80px 124px;
   color: #010101;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 0 80px;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 20px 0 20px;
+  }
 }
 
 .section-1 {
@@ -26,11 +34,20 @@
     row-gap: 10px;
     max-width: 520px;
     text-align: right;
+
+    @media screen and (max-width: 768px) {
+      bottom: 20%;
+      right: 10%;
+    }
   }
 
   &__subtitle {
     font-size: 24px;
     font-weight: 400;
+
+    @media screen and (max-width: 500px) {
+      font-size: 18px;
+    }
   }
   &__link {
     display: flex;
@@ -51,6 +68,10 @@
     height: 639px;
     margin-bottom: 75px;
 
+    @media screen and (max-width: 768px) {
+      height: 400px;
+    }
+
     &::before {
       position: absolute;
       content: "";
@@ -68,6 +89,10 @@
         url("../assets/images/preview-bg.jfif");
       background-size: 72%;
       background-position: 37% 9%;
+
+      @media screen and (max-width: 768px) {
+        left: -800px;
+      }
     }
   }
 
@@ -77,6 +102,7 @@
     bottom: 0;
     left: calc(50% - 300px);
     display: flex;
+    overflow: hidden;
 
     width: 600px;
     padding: 16px 24px;
@@ -95,6 +121,17 @@
       font-size: 24px;
       line-height: 31px;
       color: rgba(0, 0, 0, 0.5);
+      outline: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 300px;
+      left: calc(50% - 150px);
+      bottom: -60px;
+
+      &__input {
+        margin-right: 0;
+      }
     }
   }
 }
@@ -113,6 +150,7 @@
   }
 
   &__card {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,10 +160,28 @@
     border-radius: 24px;
     text-align: center;
     font-size: 18px;
+
+    transition: 0.5s all ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+    }
   }
 
   &__text {
     padding: 0 10px;
+  }
+
+  &__icon-2-2 {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+  }
+  &__icon-3-2 {
+    position: absolute;
+    top: 10%;
   }
 }
 
@@ -153,6 +209,13 @@
     border-radius: 24px;
     text-align: center;
     box-sizing: border-box;
+    transition: 0.5s all ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+    }
   }
 
   &__card__image {
@@ -196,6 +259,7 @@
 
   &__circle {
     position: absolute;
+    pointer-events: none;
 
     &__circle-1 {
       top: 42%;
@@ -209,6 +273,7 @@
       font-weight: 300;
       color: #fff;
       text-align: center;
+      pointer-events: auto;
 
       &__text {
         position: absolute;
@@ -247,6 +312,7 @@
       font-weight: 300;
       color: #fff;
       text-align: center;
+      pointer-events: auto;
 
       &__text {
         position: absolute;
@@ -278,6 +344,11 @@
       font-weight: 300;
       color: #fff;
       text-align: center;
+      pointer-events: auto;
+
+      @media screen and (max-width: 1250px) {
+        display: none;
+      }
 
       &__text {
         position: absolute;
@@ -310,7 +381,11 @@
       font-weight: 300;
       color: #144a92;
       text-align: center;
+      pointer-events: auto;
 
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
       &__text {
         position: absolute;
         top: 20%;
@@ -350,6 +425,11 @@
       font-weight: 300;
       color: #144a92;
       text-align: center;
+      pointer-events: auto;
+
+      @media screen and (max-width: 500px) {
+        display: none;
+      }
 
       &__text {
         position: absolute;
@@ -376,15 +456,31 @@
     position: absolute;
     left: 0;
     top: -2%;
+    z-index: -1;
+    pointer-events: none;
   }
 }
 
 .section-5 {
+  padding-bottom: 130px;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 0 80px;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 0 0 20px;
+  }
+
   &__image {
     width: 706px;
-    height: 460px;
+    aspect-ratio: 706/ 460;
     object-fit: cover;
     object-position: 0 40%;
+
+    @media screen and (max-width: 650px) {
+      width: 350px;
+    }
   }
 
   &__text {
@@ -392,6 +488,15 @@
     margin-bottom: 25px;
     text-align: center;
     font-size: 24px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+    }
+
+    @media screen and (max-width: 600px) {
+      width: auto;
+      padding: 0 15px;
+    }
   }
 
   &__container {
@@ -405,6 +510,12 @@
     height: 62px;
     font-size: 24px;
     font-weight: 700;
+
+    @media screen and (max-width: 768px) {
+      width: 100px;
+      height: 50px;
+      font-size: 18px;
+    }
   }
 }
 
@@ -432,11 +543,14 @@
     top: calc(50% - 13%);
     left: calc(50% - 7%);
     width: 14%;
+    cursor: pointer;
   }
 
   &__bg-ellipse {
     position: absolute;
     right: 0;
     top: -60%;
+    z-index: -1;
+    pointer-events: none;
   }
 }
