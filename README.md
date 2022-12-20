@@ -1,0 +1,1 @@
+P.S. Seems like the design of the second footer section is not symmetric (columns are all with different space between them) or i didn't get the pattern, so it doesn't match the original layout from figma in my case.
