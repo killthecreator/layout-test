@@ -40,11 +40,13 @@ h1 {
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 40px;
+    line-height: 40px;
   }
 }
 @media screen and (max-width: 500px) {
   h1 {
     font-size: 32px;
+    line-height: 30px;
   }
 }
 
@@ -119,6 +121,7 @@ input {
   color: #fff;
   font-size: 18px;
   cursor: pointer;
+  transition: 0.5s all ease;
 }
 @media screen and (max-width: 768px) {
   .button {
@@ -130,7 +133,6 @@ input {
   background-color: #fff;
   color: #f15b62;
   transform: scale(1.07);
-  transition: 0.5s all ease;
   outline: 2px solid #f15b62;
 }
 .button_bg_white {
@@ -218,7 +220,26 @@ input {
   column-gap: 14px;
   cursor: pointer;
 }
-.nav__item__drop-arrow {
+.nav__dropdown {
+  position: relative;
+  display: inline-block;
+}
+.nav__dropdown__content {
+  display: none;
+  position: absolute;
+  top: 40px;
+  background-color: #f9f9f9;
+  width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  z-index: 1;
+  border-radius: 10px;
+  color: #000;
+}
+.nav__dropdown:hover .nav__dropdown__content {
+  display: block;
+}
+.nav__drop-arrow {
   position: absolute;
   top: 10px;
   left: -15px;
@@ -438,7 +459,7 @@ input {
     bottom: -60px;
   }
   .section-1__form__input {
-    margin-right: 0;
+    width: 150px;
   }
 }
 
@@ -817,6 +838,10 @@ input {
   left: 43%;
   width: 14%;
   cursor: pointer;
+  transition: 0.5s all ease;
+}
+.section-6__video-frame__btn:hover {
+  transform: scale(1.05);
 }
 .section-6__bg-ellipse {
   position: absolute;

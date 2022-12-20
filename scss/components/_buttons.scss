@@ -10,6 +10,7 @@
   color: #fff;
   font-size: 18px;
   cursor: pointer;
+  transition: 0.5s all ease;
 
   @media screen and (max-width: 768px) {
     font-size: 14px;
@@ -20,7 +21,6 @@
     background-color: #fff;
     color: #f15b62;
     transform: scale(1.07);
-    transition: 0.5s all ease;
     outline: 2px solid #f15b62;
   }
 
