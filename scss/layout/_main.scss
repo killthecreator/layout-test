@@ -1,11 +1,11 @@
 .main {
   overflow: hidden;
 }
-.section-2,
-.section-3,
-.section-4,
-.section-5,
-.section-6 {
+.help,
+.good-to-know,
+.stats,
+.be-a-part,
+.expl-video {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +21,7 @@
   }
 }
 
-.section-1 {
+.preview {
   overflow: hidden;
 
   &__text {
@@ -136,7 +136,7 @@
   }
 }
 
-.section-2 {
+.help {
   &__title {
     margin-bottom: 45px;
   }
@@ -185,7 +185,7 @@
   }
 }
 
-.section-3 {
+.good-to-know {
   &__title {
     margin-bottom: 45px;
   }
@@ -242,7 +242,7 @@
   }
 }
 
-.section-4 {
+.stats {
   position: relative;
   padding-left: 0;
   padding-right: 0;
@@ -269,7 +269,7 @@
       left: 7.3%;
       width: 258px;
       aspect-ratio: 1/1;
-      background: url("../assets/icons/section-4_circle-2.svg");
+      background: url("../assets/icons/stats_circle-2.svg");
       font-weight: 300;
       color: #fff;
       text-align: center;
@@ -308,7 +308,7 @@
       left: 25.5%;
       width: 262px;
       aspect-ratio: 1/1;
-      background: url("../assets/icons/section-4_circle-5.svg");
+      background: url("../assets/icons/stats_circle-5.svg");
       font-weight: 300;
       color: #fff;
       text-align: center;
@@ -340,7 +340,7 @@
       left: 43.5%;
       width: 222px;
       aspect-ratio: 1/1;
-      background: url("../assets/icons/section-4_circle-6.svg");
+      background: url("../assets/icons/stats_circle-6.svg");
       font-weight: 300;
       color: #fff;
       text-align: center;
@@ -377,7 +377,7 @@
       right: 20.7%;
       width: 239px;
       aspect-ratio: 1/1;
-      background: url("../assets/icons/section-4_circle-8.svg");
+      background: url("../assets/icons/stats_circle-8.svg");
       font-weight: 300;
       color: #144a92;
       text-align: center;
@@ -421,7 +421,7 @@
       right: -4.7%;
       width: 268px;
       aspect-ratio: 1/1;
-      background: url("../assets/icons/section-4_circle-5.svg") no-repeat;
+      background: url("../assets/icons/stats_circle-5.svg") no-repeat;
       font-weight: 300;
       color: #144a92;
       text-align: center;
@@ -461,7 +461,7 @@
   }
 }
 
-.section-5 {
+.be-a-part {
   padding-bottom: 130px;
 
   @media screen and (max-width: 768px) {
@@ -519,7 +519,7 @@
   }
 }
 
-.section-6 {
+.expl-video {
   position: relative;
   &__title {
     margin-bottom: 42px;
