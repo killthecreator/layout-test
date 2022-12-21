@@ -47,7 +47,8 @@
       }
     }
     &_border_red {
-      outline: 2px solid #f15b62;
+      border: 2px solid #f15b62;
+
       color: #f15b62;
       &:hover {
         background-color: #f15b62;
@@ -56,7 +57,8 @@
       }
     }
     &_border_blue {
-      outline: 2.5px solid #004990;
+      outline: 2.5px;
+      border: 2.5px solid #004990;
       color: #004990;
       &:hover {
         background-color: #004990;
