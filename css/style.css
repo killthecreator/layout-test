@@ -157,7 +157,7 @@ input {
   }
 }
 .button_bg_white_border_red {
-  outline: 2px solid #f15b62;
+  border: 2px solid #f15b62;
   color: #f15b62;
 }
 .button_bg_white_border_red:hover {
@@ -166,7 +166,8 @@ input {
   outline: none;
 }
 .button_bg_white_border_blue {
-  outline: 2.5px solid #004990;
+  outline: 2.5px;
+  border: 2.5px solid #004990;
   color: #004990;
 }
 .button_bg_white_border_blue:hover {
@@ -576,7 +577,7 @@ input {
 .stats__circle__circle-2 {
   left: 7.3%;
   width: 258px;
-  aspect-ratio: 1/1;
+  height: 258px;
   background: url("../assets/icons/stats_circle-2.svg");
   font-weight: 300;
   color: #fff;
@@ -609,8 +610,9 @@ input {
 .stats__circle__circle-5 {
   bottom: 0;
   left: 25.5%;
+  z-index: 2;
   width: 262px;
-  aspect-ratio: 1/1;
+  height: 262px;
   background: url("../assets/icons/stats_circle-5.svg");
   font-weight: 300;
   color: #fff;
@@ -639,7 +641,7 @@ input {
   top: 8.8%;
   left: 43.5%;
   width: 222px;
-  aspect-ratio: 1/1;
+  width: 222px;
   background: url("../assets/icons/stats_circle-6.svg");
   font-weight: 300;
   color: #fff;
@@ -674,7 +676,7 @@ input {
   top: 21%;
   right: 20.7%;
   width: 239px;
-  aspect-ratio: 1/1;
+  height: 239px;
   background: url("../assets/icons/stats_circle-8.svg");
   font-weight: 300;
   color: #144a92;
@@ -717,7 +719,7 @@ input {
   top: -3%;
   right: -4.7%;
   width: 268px;
-  aspect-ratio: 1/1;
+  height: 268px;
   background: url("../assets/icons/stats_circle-5.svg") no-repeat;
   font-weight: 300;
   color: #144a92;
